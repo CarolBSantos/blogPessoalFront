@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router'
 
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
+import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
+import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
 import { EntrarComponent } from './entrar/entrar.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { MenuComponent } from './menu/menu.component';
@@ -18,7 +20,9 @@ const routes: Routes = [
 {path: 'menu', component: MenuComponent},
 {path: 'rodape', component: RodapeComponent},
 {path: 'inicio', component: InicioComponent},
-{path: 'tema', component: TemaComponent}
+{path: 'tema', component: TemaComponent},
+{path: 'tema-edit/:id', component: TemaEditComponent},
+{path: 'tema-delete/:id', component: TemaDeleteComponent}
 
 ];
 
