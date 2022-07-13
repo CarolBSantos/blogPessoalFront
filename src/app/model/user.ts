@@ -1,4 +1,4 @@
-import { postagem } from "./postagem"
+import { postagem } from "./Postagem"
 
 export class user{
    public id: number
