@@ -20,7 +20,7 @@ export class TemaService {
   }
 
   getByIdTema(id: number): Observable<tema>{
-    return this.http.get<tema>(`htppp://localhost:8080/temas/${id}`, this.token)
+    return this.http.get<tema>(`http://localhost:8080/temas/${id}`, this.token)
 
   }
 
